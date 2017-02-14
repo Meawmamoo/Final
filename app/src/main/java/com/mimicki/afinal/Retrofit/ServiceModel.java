@@ -1,5 +1,7 @@
 package com.mimicki.afinal.Retrofit;
 
+import com.google.gson.annotations.SerializedName;
+
 /**
  * Created by DELL on 7/13/2016.
  */
@@ -78,5 +80,4 @@ public class ServiceModel {
 //    public void setIsSuccess(boolean isSuccess) {
 //        this.isSuccess = isSuccess;
 //    }
-
 }

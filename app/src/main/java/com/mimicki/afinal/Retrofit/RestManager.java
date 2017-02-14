@@ -1,5 +1,8 @@
 package com.mimicki.afinal.Retrofit;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import okhttp3.MediaType;
 import okhttp3.OkHttpClient;
 import okhttp3.RequestBody;
@@ -44,11 +47,13 @@ public class RestManager {
         HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         OkHttpClient client = new OkHttpClient.Builder().addInterceptor(interceptor).build();
-
+        Gson gson = new GsonBuilder()
+                .setLenient()
+                .create();
         Retrofit retrofit = new Retrofit.Builder()
                 .baseUrl(Constants.HTTP.BASE_URL)
                 .client(client)
-                .addConverterFactory(GsonConverterFactory.create())
+                .addConverterFactory(GsonConverterFactory.create(gson))
                 .build();
 
         service = retrofit.create(Service.class);
