@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clickable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/scrollView3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:weightSum="10"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:id="@+id/driver_text_circle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:src="@drawable/circle_green"/>
+
+                <!--ทำ circle red for during the operation-->
+
+                <TextView
+                    android:id="@+id/driver_text_alert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="รอสัญญาณขอความช่วยเหลือ"
+                    android:textColor="@color/issue"
+                    android:layout_weight="9"
+                    android:textSize="15dp" />
+
+                <ImageView
+                    android:id="@+id/driverLogout"
+                    android:layout_width="32dp"
+                    android:layout_height="24dp"
+                    android:gravity="right"
+                    android:padding="2dp"
+                    android:src="@drawable/logout" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+
+                <!--<ImageView-->
+                <!--android:id="@+id/mapFragment"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_centerInParent="true"-->
+                <!--android:src="@drawable/driver_map_fill"/>-->
+
+                <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:id="@+id/mapFragment"
+                    class="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_centerInParent="true"
+                    tools:context=".fragment.DriverFragment" />
+
+                <Button
+                    android:id="@+id/changeTypeDriver"
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/type" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

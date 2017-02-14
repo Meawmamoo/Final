@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.mimicki.afinal">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="com.example.mimic.epls.permission.MAPS_RECEIVE"/>
+    <permission android:name="com.example.mimic.epls.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="android.permission.CAMERA" android:protectionLevel="signature"/>
+    <permission android:name="android.permission.ACCESS_COARSE_LOCATION" android:protectionLevel="signature"/>
+    <permission android:name="android.permission.READ_EXTERNAL_STORAGE" android:protectionLevel="signature"/>
+
+    <!--<uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />-->
+    <!--
+ The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
+         Google Maps Android API v2, but are recommended.
+    -->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:debuggable="true"
+        android:largeHeap="true"
+        android:name=".utils.InitialFonts"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity android:name=".MainActivity"/>
+        <activity android:name=".DriverActivity"/>
+        <activity android:name=".TabTwoActivity"/>
+        <activity android:name=".RegisterActivity"/>
+        <activity android:name=".TabActivity"/>
+        <activity android:name=".MapActivity"/>
+        <activity android:name=".IntroActivity"/>
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="8487000"
+            tools:replace="android:value"/>
+    </application>
+
+</manifest>

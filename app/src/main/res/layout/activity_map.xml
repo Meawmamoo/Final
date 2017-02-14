@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/mapMap"
+            class="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            tools:context=".fragment.DriverFragment" />
+
+        <Button
+            android:id="@+id/changeTypeMap"
+            android:layout_width="15dp"
+            android:layout_height="20dp"
+            android:layout_margin="15dp"
+            android:background="@drawable/type" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="กดปุ่มสีแดงเพื่อยืนยันการระบุตำแหน่ง"
+                android:textColor="@color/nearlyblack"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="หรือกดค้างที่แผนที่เพื่อระบุตำแหน่งใหม่"
+                android:textColor="@color/nearlyblack"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/buttonLocationMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/icon_location_shade" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingTop="10dp">
+
+
+    </LinearLayout>
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:gravity="center|top"-->
+    <!--android:orientation="horizontal"-->
+    <!--android:paddingTop="10dp">-->
+
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:gravity="center"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingRight="10dp">-->
+
+
+    <!--<ImageButton-->
+    <!--android:id="@+id/buttonCameraMap"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:src="@drawable/camera_icon2" />-->
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/cameraText"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="Take a situation shot"-->
+    <!--android:textSize="15sp" />-->
+
+
+    <!--</LinearLayout>-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/fillPicMap"-->
+    <!--android:layout_width="160dp"-->
+    <!--android:layout_height="100dp"-->
+    <!--android:padding="5dp"-->
+    <!--android:background="@drawable/camera_box2" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <TextView
+        android:id="@+id/buttonSendMap"
+        android:layout_width="250dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/login_button2"
+        android:gravity="center"
+        android:text="ส่ง"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="bottom">
+
+        <ImageView
+            android:id="@+id/map_back"
+            android:layout_width="10dp"
+            android:layout_height="15dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="15dp"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/buttonNotSendMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ย้อนกลับ"
+            android:paddingTop="10dp"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/text" />
+
+    </LinearLayout>
+
+</LinearLayout>

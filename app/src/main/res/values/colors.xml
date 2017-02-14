@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#26c3a6</color>
+    <color name="colorPrimaryDark">#0f464b</color>
+    <color name="colorAccent">#3a6c8c</color>
+    <color name="egg">#f4f4ebcf</color>
+    <color name="mainGreen">#15575c</color>
+    <color name="white">#ffffff</color>
+    <color name="text">#0a2e31</color>
+    <color name="issue">#062021</color>
+    <color name="nearlyblack">#414141</color>
+    <color name="black">#000000</color>
+    <color name="mainSoft">#e65da3a7</color>
+    <color name="lightGreen">#26c3a6</color>
+    <color name="hint_gray">#8a8a97</color>
+    <color name="transparent">#00ffffff</color>
+    <color name="red">#f23f3f</color>
+    <color name="grayblue">#b7c4c5</color>
+    <color name="blueGreen">#27afb9</color>
+</resources>

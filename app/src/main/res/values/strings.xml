@@ -1,0 +1,19 @@
+<resources>
+
+
+    <string name="app_name">EPLS</string>
+    <string name="loading_text">Loading</string>
+    <string name="GPSAlertDialogTitle">GPS</string>
+    <string name="GPSAlertDialogMessage">Message</string>
+    <string name="action_settings">Setting</string>
+    <string name="login_error_message">Error</string>
+
+
+    <string-array name="tabs">
+        <item>TAB 1</item>
+        <item>TAB 1</item>
+        <item>TAB 1</item>
+    </string-array>
+
+
+</resources>

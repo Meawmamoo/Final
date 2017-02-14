@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/scrollView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:background="@drawable/rec"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingBottom="20dp"
+            android:text="ข้อมูลของผู้เรียก"
+            android:textColor="@color/issue"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:text="ชื่อ-สกุล"
+            android:textColor="@color/issue"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:id="@+id/driver_user_fname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ชื่อจริง"
+                android:textColor="@color/nearlyblack"
+                android:maxLines="1" />
+
+            <TextView
+                android:id="@+id/driver_user_lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="นามสกุล"
+                android:textColor="@color/nearlyblack"
+                android:maxLines="1" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:text="เพศ"
+            android:textColor="@color/issue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/driver_user_gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="หญิง"
+            android:textColor="@color/nearlyblack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:text="อายุ"
+            android:textColor="@color/issue"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp">
+
+
+            <TextView
+                android:id="@+id/driver_user_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:textColor="@color/nearlyblack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="ปี"
+                android:textColor="@color/nearlyblack" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:text="เบอร์โทรศัพท์"
+            android:textColor="@color/issue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/driver_user_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="0812345678"
+            android:textColor="@color/nearlyblack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:text="เบอร์โทรศัพท์ของบุคคลใกล้ชิด"
+            android:textColor="@color/issue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/driver_user_em_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="0809876543"
+            android:textColor="@color/nearlyblack" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:paddingTop="10dp"
+            android:text="ที่อยู่"
+            android:textColor="@color/issue"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/driver_user_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
+            android:text="11/111 หมูบ้าน โชคดี ซอย ทวี65 ถนน ชัยพฤกษ์ แขวงบางบำหรุ เขต ท่าน้ำ กทม 10450"
+            android:textColor="@color/nearlyblack" />
+
+    </LinearLayout>
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="265dp"-->
+    <!--android:layout_height="150dp"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:background="@drawable/edit_fill" />-->
+
+</ScrollView>
+</LinearLayout>
